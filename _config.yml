@@ -22,7 +22,7 @@ title: minh.codes
 email: minh.n@hey.com
 description: >- # this means to ignore newlines until "baseurl:"
   Minh Nguyen. Software Engineer, based in Florida.
-  See my experience, projects, and thoughts here.
+  My little corner of the web to share my thoughts, projects, and experience.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
