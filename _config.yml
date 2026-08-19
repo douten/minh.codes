@@ -32,6 +32,17 @@ github_username:  douten
 plugins:
   - jekyll-feed
 
+
+# Default Variables
+defaults:
+  - # use to include native_highlight.scss
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      code_highlight: "false"
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

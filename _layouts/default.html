@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    {% if page.code_highlight != "false" %}
+        <link rel="stylesheet" href="/assets/css/code_highlight.css">
+    {% endif %}
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>
