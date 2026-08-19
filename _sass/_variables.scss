@@ -1,0 +1,95 @@
+// ============================================
+// _tokens.scss
+// ============================================
+
+:root {
+    color-scheme: light dark;
+
+    // --- Color ---------------------------------
+    --color-bg: #fdf0d5;
+    --color-surface: #f9fafb;
+    --color-fg: #1a1a1a;
+    --color-muted: #6b7280;
+    --color-subtle: #9ca3af;
+    --color-primary: #780000;
+    --color-primary-hover: #c1121f;
+    --color-border: #e5e7eb;
+    --color-accent: #003049;
+    --color-accent-hover: #669bbc;
+
+    // --- Type families -------------------------
+    --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Fira Code", monospace;
+
+    // --- Type scale (1.25 major third, 16px base) ---
+    --text-2xs: 0.64rem; // 10.24px — legal, tiny captions
+    --text-xs: 0.8rem; // 12.8px  — micro labels, badges
+    --text-sm: 0.875rem; // 14px    — secondary/UI text
+    --text-base: 1rem; // 16px    — body
+    --text-md: 1.25rem; // 20px    — lead paragraph
+    --text-lg: 1.563rem; // 25px    — h4
+    --text-xl: 1.953rem; // 31.25px — h3
+    --text-2xl: 2.441rem; // 39px    — h2
+    --text-3xl: 3.052rem; // 48.8px  — h1
+    --text-4xl: 3.815rem; // 61px    — display/hero
+
+    // --- Line heights --------------------------
+    --leading-none: 1;
+    --leading-tight: 1.15; // headings
+    --leading-snug: 1.35;
+    --leading-normal: 1.6; // body
+    --leading-relaxed: 1.75; // long-form
+
+    // --- Font weights --------------------------
+    --weight-normal: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    // --- Letter spacing ------------------------
+    --tracking-tight: -0.02em; // large display
+    --tracking-normal: 0;
+    --tracking-wide: 0.04em; // micro caps, eyebrows
+
+    // --- Spacing -------------------------------
+    // Component-level
+    --space-xs: 0.25rem; // 4px
+    --space-sm: 0.5rem; // 8px
+    --space-md: 1rem; // 16px
+    --space-lg: 1.5rem; // 24px
+    --space-xl: 2rem; // 32px
+    --space-2xl: 3rem; // 48px
+    --space-3xl: 5rem; // 80px
+    // Layout-level
+    --space-section: 5rem; // 80px — between page sections
+    --space-page: 8rem; // 128px — major page divisions
+
+    // --- Radius --------------------------------
+    --radius-sm: 0.25rem;
+    --radius-base: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-full: 9999px;
+
+    // --- Elevation -----------------------------
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.06);
+    --shadow-base: 0 1px 3px rgb(0 0 0 / 0.1), 0 1px 2px rgb(0 0 0 / 0.06);
+    --shadow-lg: 0 10px 25px rgb(0 0 0 / 0.12), 0 4px 8px rgb(0 0 0 / 0.06);
+
+    // --- Motion --------------------------------
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+    --duration-fast: 120ms;
+    --duration-base: 200ms;
+    --duration-slow: 400ms;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #0f0f0f;
+        --color-surface: #171717;
+        --color-fg: #f5f5f5;
+        --color-muted: #9ca3af;
+        --color-subtle: #6b7280;
+        --color-border: #262626;
+    }
+}
