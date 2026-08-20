@@ -27,6 +27,20 @@ p {
     margin-block-end: var(--space-md);
 }
 
+a {
+    color: var(--color-fg-interactive-default);
+    font-weight: var(--weight-semibold);
+
+    &:visited {
+        color: var(--color-fg-interactive-default);
+        text-decoration-style: dashed;
+    }
+
+    &:hover {
+        color: var(--color-fg-interactive-hover)
+    }
+}
+
 .display {
   font-size: var(--text-4xl);
   line-height: var(--leading-none);
