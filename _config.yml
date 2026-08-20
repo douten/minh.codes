@@ -29,9 +29,19 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  douten
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+
+
+# Default Variables
+defaults:
+  - # use to include native_highlight.scss
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      code_highlight: "false"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

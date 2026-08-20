@@ -1,0 +1,188 @@
+// ============================================
+// _helpers.scss
+// ============================================
+
+// --- Foreground color ---------------
+.fg-primary {
+    color: var(--color-fg-primary);
+}
+.fg-secondary {
+    color: var(--color-fg-secondary);
+}
+.fg-tertiary {
+    color: var(--color-fg-tertiary);
+}
+.fg-disabled {
+    color: var(--color-fg-disabled);
+}
+.fg-interactive {
+    color: var(--color-fg-interactive-default);
+}
+.fg-interactive-hover {
+    color: var(--color-fg-interactive-hover);
+}
+.fg-info {
+    color: var(--color-fg-info);
+}
+
+// --- Background color ----------------------
+.bg-primary {
+    background-color: var(--color-bg-primary);
+}
+.bg-secondary {
+    background-color: var(--color-bg-secondary);
+}
+.bg-tertiary {
+    background-color: var(--color-bg-tertiary);
+}
+.bg-disabled {
+    background-color: var(--color-bg-disabled);
+}
+.bg-info {
+    background-color: var(--color-bg-info);
+}
+
+// --- Spacing scale (map) -------------------
+$spacing: (
+    "xs": var(--space-xs),
+    "sm": var(--space-sm),
+    "md": var(--space-md),
+    "lg": var(--space-lg),
+    "xl": var(--space-xl),
+    "2xl": var(--space-2xl),
+    "3xl": var(--space-3xl),
+);
+
+// --- Margin --------------------------------
+@each $key, $val in $spacing {
+    .m-#{$key} {
+        margin: #{$val};
+    }
+    .mt-#{$key} {
+        margin-top: #{$val};
+    }
+    .mr-#{$key} {
+        margin-right: #{$val};
+    }
+    .mb-#{$key} {
+        margin-bottom: #{$val};
+    }
+    .ml-#{$key} {
+        margin-left: #{$val};
+    }
+    .mx-#{$key} {
+        margin-left: #{$val};
+        margin-right: #{$val};
+    }
+    .my-#{$key} {
+        margin-top: #{$val};
+        margin-bottom: #{$val};
+    }
+}
+
+// --- Padding -------------------------------
+@each $key, $val in $spacing {
+    .p-#{$key} {
+        padding: #{$val};
+    }
+    .pt-#{$key} {
+        padding-top: #{$val};
+    }
+    .pr-#{$key} {
+        padding-right: #{$val};
+    }
+    .pb-#{$key} {
+        padding-bottom: #{$val};
+    }
+    .pl-#{$key} {
+        padding-left: #{$val};
+    }
+    .px-#{$key} {
+        padding-left: #{$val};
+        padding-right: #{$val};
+    }
+    .py-#{$key} {
+        padding-top: #{$val};
+        padding-bottom: #{$val};
+    }
+}
+
+// --- Borders -------------------------------
+/* --- Border width --- */
+.border {
+    border: 1px solid var(--color-border-default);
+}
+.border-0 {
+    border: 0;
+}
+.border-2 {
+    border: 2px solid var(--color-border-default);
+}
+
+/* --- Border sides --- */
+.border-t {
+    border-top: 1px solid var(--color-border-default);
+}
+.border-r {
+    border-right: 1px solid var(--color-border-default);
+}
+.border-b {
+    border-bottom: 1px solid var(--color-border-default);
+}
+.border-l {
+    border-left: 1px solid var(--color-border-default);
+}
+
+/* --- Border color --- */
+.border-default {
+    border-color: var(--color-border-default);
+}
+.border-focus {
+    border-color: var(--color-border-focus);
+}
+.border-success {
+    border-color: var(--color-border-success);
+}
+.border-warning {
+    border-color: var(--color-border-warning);
+}
+.border-danger {
+    border-color: var(--color-border-danger);
+}
+.border-info {
+    border-color: var(--color-border-info);
+}
+.content-box {
+    box-sizing: content-box;
+}
+
+// --- Typography -------------------------------
+.line-through {
+    text-decoration: line-through;
+}
+
+
+// --- Block -------------------------------
+/* --- Displays --- */
+.flex        { display: flex; }
+.inline-flex { display: inline-flex; }
+
+/* Direction */
+.flex-row       { flex-direction: row; }
+.flex-col       { flex-direction: column; }
+
+/* Wrap */
+.flex-wrap      { flex-wrap: wrap; }
+.flex-nowrap    { flex-wrap: nowrap; }
+
+/* Gap */
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.gap-lg { gap: var(--space-lg); }
+
+/* --- Resets --- */
+.list-none {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

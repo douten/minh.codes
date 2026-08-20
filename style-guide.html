@@ -1,0 +1,209 @@
+---
+layout: default
+title: Style Guide
+code_highlight: true
+---
+
+<h1>Style Guide</h1>
+<p>
+    A simple style guide to the site. Is it necessary for a small site?
+    Absolutely! because it was fun to make :)
+</p>
+<h2 class="lead">Sample</h2>
+<div class="card">
+    <span class="eyebrow">Nam commodo a</span>
+    <h2>Nunc eget dolor eros</h2>
+    <p>
+        Proin convallis eu eros non vulputate. Vivamus pharetra <a href="#">elit a ligula tempus</a> vel tempus magna blandit. Aliquam elementum eros ut mi scelerisque ornare.
+        Donec a neque quis purus semper rutrum venenatis eget leo.
+        In ultricies ac purus id bibendum. Mauris sodales, odio sed blandit pharetra, ante odio congue ipsum, <a href="#">quis lacinia metus risus</a> sit amet massa.
+        Etiam non odio eros. Proin venenatis velit ac turpis ultricies mattis. Aenean posuere scelerisque dui vitae aliquet:
+    </p>
+    {% highlight javascript %}
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        card.classList.toggle("is-active");
+      });
+    });
+    {% endhighlight %}
+    <p>
+        Fusce nec semper nisi, eu ornare risus. Praesent molestie purus velit, eget suscipit turpis tempor id.
+        Integer augue risus, malesuada et odio placerat, luctus scelerisque mauris. Donec nulla eros, efficitur nec eros in, lacinia vulputate urna.
+    </p>
+    <h3>Duis finibus sodales justo ac consectetur.</h3>
+    <p>
+        Mauris quis iaculis lorem. Vivamus consequat imperdiet metus vitae pharetra. Suspendisse risus tortor, dictum ultrices pretium sed, malesuada eu sapien.
+        <span class="fg-disabled line-through">Praesent dignissim accumsan scelerisque.</span> Vestibulum porta scelerisque erat in iaculis.
+        Phasellus sed feugiat felis, ac luctus augue. Integer blandit sem libero, id malesuada mauris tempor ultricies.
+    </p>
+    <span class="legal">Nam commodo a</span>
+</div>
+<div class="card">
+    <h2 class="eyebrow">Colors</h2>
+    <div>
+        <span>Foreground</span>
+        <ul class="list-none swatches">
+            <li>
+                <div style="background: var(--color-fg-primary)"></div>
+                <span>primary</span>
+            </li>
+            <li>
+                <div style="background: var(--color-fg-secondary)"></div>
+                <span>secondary</span>
+            </li>
+            <li>
+                <div style="background: var(--color-fg-tertiary)"></div>
+                <span>tertiary</span>
+            </li>
+            <li>
+                <div style="background: var(--color-fg-disabled)"></div>
+                <span>disabled</span>
+            </li>
+            <li>
+                <div
+                    style="background: var(--color-fg-interactive-default)"
+                ></div>
+                <span>interactive</span>
+            </li>
+            <li>
+                <div
+                    style="background: var(--color-fg-interactive-hover)"
+                ></div>
+                <span>interactive-hover</span>
+            </li>
+            <li>
+                <div style="background: var(--color-fg-info)"></div>
+                <span>info</span>
+            </li>
+        </ul>
+        <span>Background</span>
+        <ul class="list-none swatches">
+            <li>
+                <div style="background: var(--color-bg-primary)"></div>
+                <span>primary</span>
+            </li>
+            <li>
+                <div style="background: var(--color-bg-secondary)"></div>
+                <span>secondary</span>
+            </li>
+            <li>
+                <div style="background: var(--color-bg-tertiary)"></div>
+                <span>tertiary</span>
+            </li>
+            <li>
+                <div style="background: var(--color-bg-disabled)"></div>
+                <span>disabled</span>
+            </li>
+            <li>
+                <div style="background: var(--color-bg-info)"></div>
+                <span>info</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="card">
+    <h2 class="eyebrow">Typography</h2>
+    <span class="micro">Headers</span>
+    <ul class="list-none">
+        <li>
+            <h1>Header 1</h1>
+        </li>
+        <li>
+            <h2>Header 2</h2>
+        </li>
+        <li>
+            <h3>Header 3</h3>
+        </li>
+        <li>
+            <h4>Header 4</h4>
+        </li>
+    </ul>
+    <span class="micro">Body</span>
+    <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.
+    </p>
+    <p>
+        Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
+        Morbi in sem quis dui placerat ornare. Pellentesque odio nisi euismod in pharetra a ultricies in diam. Sed arcu. Cras consequat.
+    </p>
+    <span class="micro">Misc</span>
+    <ul class="list-none">
+        <li>
+            <span class="display">Lorem Ipsum</span>
+            <span class="micro">display</span>
+        </li>
+        <li>
+            <span class="lead">Lorem Ipsum</span>
+            <span class="micro">lead</span>
+        </li>
+        <li>
+            <span class="small">Lorem Ipsum</span>
+            <span class="micro">small</span>
+        </li>
+        <li>
+            <span class="micro">Lorem Ipsum</span>
+            <span class="micro">micro</span>
+        </li>
+        <li>
+            <span class="legal">Lorem Ipsum</span>
+            <span class="micro">legal</span>
+        </li>
+    </ul>
+</div>
+<div class="card">
+    <h2 class="eyebrow">Spacing</h2>
+    <span class="micro">Margin, padding</span>
+    <ul class="list-none flex flex-row flex-wrap gap-md">
+        <li>
+            <div class="border">
+                <div class="bg-tertiary spacing-box m-xs">
+                </div>
+            </div>
+            <span>xs</span>
+        </li>
+        <li>
+            <div class="border">
+                <div class="bg-tertiary spacing-box m-sm">
+                </div>
+            </div>
+            <span>sm</span>
+        </li>
+        <li>
+            <div class="border">
+                <div class="bg-tertiary spacing-box m-md">
+                </div>
+            </div>
+            <span>md</span>
+        </li>
+        <li>
+            <div class="border">
+                <div class="bg-tertiary spacing-box m-lg">
+                </div>
+            </div>
+            <span>lg</span>
+        </li>
+        <li>
+            <div class="border">
+                <div class="bg-tertiary spacing-box m-xl">
+                </div>
+            </div>
+            <span>xl</span>
+        </li>
+        <li>
+            <div class="border">
+                <div class="bg-tertiary spacing-box m-2xl">
+                </div>
+            </div>
+            <span>2xl</span>
+        </li>
+        <li>
+            <div class="border">
+                <div class="bg-tertiary spacing-box m-3xl">
+                </div>
+            </div>
+            <span>3xl</span>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,151 @@
+// ============================================
+// _tokens.scss
+// ============================================
+
+:root {
+    color-scheme: light dark;
+
+    // https://maketintsandshades.com/#colors=ffb703,06d6a0,ee6c4d,457b9d,a7c957,d62828,84827D&hashtag=0&steps=20
+    // % below is based on 20 steps. (tint, shade)
+    // FG/BG combo tested in figma for AA contrast.
+    // --- Foundation Colors ---------------------
+    --color-primary: #ffb703;
+    --color-secondary: #06d6a0;
+    --color-orange: #ee6c4d; // warning
+    --color-blue: #457b9d; // info
+    --color-green: #a7c957; // success
+    --color-red: #d62828; // error
+    --color-neutral: #8b8a88;
+
+    // --- Semantic color ------------------------
+    // Foreground
+    --color-fg-primary: light-dark(#313030, #cbcac9); // neutral 65%, 55%
+    --color-fg-secondary: light-dark(#024b38, #e0ecc4); // secondary 65%,
+    --color-fg-tertiary: light-dark(#805c02, #ffdb81); // primary 50%,
+    --color-fg-disabled: light-dark(#b4b3b2, #5a5a58); // neutral 35%, 35%
+    --color-fg-interactive-default: light-dark(#b3513a, #f2917a); // orange 25%, 25%
+    --color-fg-interactive-hover: light-dark(#d66145, #f07b5f); // orange 10%, 10%
+    --color-fg-info: light-dark(#2d5066, #86a9bf); // blue 35%, 35%
+    // --color-fg-success: var(--etc);
+    // --color-fg-warning: var(--color-yellow-50);
+    // --color-fg-danger: var(--color-red-50);
+
+    // Background
+    --color-bg-primary: light-dark(#fffbf2, #261b00); // primary 95%, 85%
+    --color-bg-secondary: light-dark(#eeeded, #313030); // neutral 85%, 65%
+    --color-bg-tertiary: light-dark(#c5c5c4, #464544); // neutral 50%, 50%
+    --color-bg-disabled: light-dark(#d6d6d5, #261b00); // neutral 65%, 65%
+    --color-bg-info: light-dark(#bed1dd, #182b37); // blue 65%
+    // --color-bg-success: var(--etc);
+    // --color-bg-warning: var(--color-yellow-50);
+    // --color-bg-danger: var(--color-red-50);
+
+    // Border
+    --color-border-default: var(--color-fg-disabled);
+    --color-border-focus: var(--color-orange-500);
+    --color-border-info: var(--color-blue-400);
+    // --color-border-success: var(--color-green-400);
+    // --color-border-warning: var(--color-yellow-400);
+    // --color-border-danger: var(--color-red-400);
+
+    // Interactive — primary
+    --color-interactive-primary: var(--color-orange-500);
+    --color-interactive-primary-hover: var(--color-orange-600);
+    --color-interactive-primary-pressed: var(--color-orange-700);
+
+    // Interactive — success
+    --color-interactive-success: var(--color-green-500);
+    --color-interactive-success-hover: var(--color-green-600);
+    --color-interactive-success-pressed: var(--color-green-700);
+
+    // Interactive — warning
+    --color-interactive-warning: var(--color-yellow-500);
+    --color-interactive-warning-hover: var(--color-yellow-600);
+    --color-interactive-warning-pressed: var(--color-yellow-700);
+
+    // Interactive — danger
+    --color-interactive-danger: var(--color-red-500);
+    --color-interactive-danger-hover: var(--color-red-600);
+    --color-interactive-danger-pressed: var(--color-red-700);
+
+    // Interactive — info
+    --color-interactive-info: var(--color-blue-500);
+    --color-interactive-info-hover: var(--color-blue-600);
+    --color-interactive-info-pressed: var(--color-blue-700);
+
+    // --- Type families -------------------------
+    --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Fira Code", monospace;
+
+    // --- Type scale (1.25 major third, 16px base) ---
+    --text-2xs: 0.64rem; // 10.24px — legal, tiny captions
+    --text-xs: 0.8rem; // 12.8px  — micro labels, badges
+    --text-sm: 0.875rem; // 14px    — secondary/UI text
+    --text-base: 1rem; // 16px    — body
+    --text-md: 1.25rem; // 20px    — lead paragraph
+    --text-lg: 1.563rem; // 25px    — h4
+    --text-xl: 1.953rem; // 31.25px — h3
+    --text-2xl: 2.5rem; // 39px    — h2
+    --text-3xl: 3.1rem; // 48.8px  — h1
+    --text-4xl: 3.815rem; // 61px    — display/hero
+
+    // --- Line heights --------------------------
+    --leading-none: 1;
+    --leading-tight: 1.15; // headings
+    --leading-snug: 1.35;
+    --leading-normal: 1.6; // body
+    --leading-relaxed: 1.75; // long-form
+
+    // --- Font weights --------------------------
+    --weight-normal: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    // --- Letter spacing ------------------------
+    --tracking-tight: -0.02em; // large display
+    --tracking-normal: 0;
+    --tracking-wide: 0.04em; // micro caps, eyebrows
+
+    // --- Spacing -------------------------------
+    // Component-level
+    --space-xs: 0.25rem; // 4px
+    --space-sm: 0.5rem; // 8px
+    --space-md: 1rem; // 16px
+    --space-lg: 1.5rem; // 24px
+    --space-xl: 2rem; // 32px
+    --space-2xl: 3rem; // 48px
+    --space-3xl: 5rem; // 80px
+    // Layout-level
+    --space-section: 5rem; // 80px — between page sections
+    --space-page: 8rem; // 128px — major page divisions
+
+    // --- Radius --------------------------------
+    --radius-sm: 0.25rem;
+    --radius-base: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-full: 9999px;
+
+    // --- Elevation -----------------------------
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.06);
+    --shadow-base: 0 1px 3px rgb(0 0 0 / 0.1), 0 1px 2px rgb(0 0 0 / 0.06);
+    --shadow-lg: 0 10px 25px rgb(0 0 0 / 0.12), 0 4px 8px rgb(0 0 0 / 0.06);
+
+    // --- Motion --------------------------------
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-inout: cubic-bezier(0.65, 0, 0.35, 1);
+    --duration-fast: 120ms;
+    --duration-base: 200ms;
+    --duration-slow: 400ms;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #0f0f0f;
+        --color-surface: #171717;
+        --color-fg: #f5f5f5;
+        --color-muted: #9ca3af;
+        --color-subtle: #6b7280;
+        --color-border: #262626;
+    }
+}
