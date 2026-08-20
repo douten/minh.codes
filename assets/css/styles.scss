@@ -22,6 +22,7 @@ body {
     border-radius: var(--radius-lg);
     background: var(--color-bg-secondary);
     padding: var(--space-md);
+    margin-bottom: var(--space-md)
 }
 
 .swatches {
@@ -39,4 +40,9 @@ body {
             font-size: var(--text-xs);
         }
     }
+}
+
+.spacing-box {
+    height: 75px;
+    width: 75px;
 }

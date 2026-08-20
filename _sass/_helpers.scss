@@ -152,6 +152,26 @@ $spacing: (
 .border-info {
     border-color: var(--color-border-info);
 }
+.content-box {
+    box-sizing: content-box;
+}
+
+/* Display */
+.flex        { display: flex; }
+.inline-flex { display: inline-flex; }
+
+/* Direction */
+.flex-row       { flex-direction: row; }
+.flex-col       { flex-direction: column; }
+
+/* Wrap */
+.flex-wrap      { flex-wrap: wrap; }
+.flex-nowrap    { flex-wrap: nowrap; }
+
+/* Gap */
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.gap-lg { gap: var(--space-lg); }
 
 // Block Styling
 .list-none {
