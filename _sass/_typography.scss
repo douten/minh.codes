@@ -46,6 +46,11 @@ p {
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
   color: var(--color-fg-secondary);
+
+  & + h2 {
+      margin-top: calc(var(--space-sm) * -1);
+  }
+
 }
 
 code, kbd, pre {

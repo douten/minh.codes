@@ -9,6 +9,28 @@ code_highlight: true
     A simple style guide to the site. Is it necessary for a small site?
     Absolutely! because it was fun to make :)
 </p>
+<h2 class="lead">Sample</h2>
+<div class="card">
+    <span class="eyebrow">Nam commodo a</span>
+    <h2>Nunc eget dolor eros</h2>
+    <p>
+        Proin convallis eu eros non vulputate. Vivamus pharetra <a href="#">elit a ligula tempus</a> vel tempus magna blandit. Aliquam elementum eros ut mi scelerisque ornare. Donec a neque quis purus semper rutrum venenatis eget leo. Nulla tincidunt, nisl nec mattis. Donec non porta nisi, id porta augue. In ultricies ac purus id bibendum. Mauris sodales, odio sed blandit pharetra, ante odio congue ipsum, <a href="#">quis lacinia metus risus</a> sit amet massa. Etiam non odio eros. Proin venenatis velit ac turpis ultricies mattis. Aenean posuere scelerisque dui vitae aliquet:
+    </p>
+    {% highlight javascript %}
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach((card) => {
+      card.addEventListener("click", () => {
+        card.classList.toggle("is-active");
+      });
+    });
+    {% endhighlight %}
+    <h3>libero mi molestie</h3>
+    <span class="micro">Nam commodo a</span>
+    <p>
+        Fusce nec semper nisi, eu ornare risus. Praesent molestie purus velit, eget suscipit turpis tempor id. Integer augue risus, malesuada et odio placerat, luctus scelerisque mauris. Donec nulla eros, efficitur nec eros in, lacinia vulputate urna. Mauris quis iaculis lorem. Duis finibus sodales justo ac consectetur. Vivamus consequat imperdiet metus vitae pharetra. Suspendisse risus tortor, dictum ultrices pretium sed, malesuada eu sapien. Praesent dignissim accumsan scelerisque. Vestibulum porta scelerisque erat in iaculis. Phasellus sed feugiat felis, ac luctus augue. Integer blandit sem libero, id malesuada mauris tempor ultricies.
+    </p>
+</div>
 <div class="card">
     <h2 class="eyebrow">Colors</h2>
     <div>
