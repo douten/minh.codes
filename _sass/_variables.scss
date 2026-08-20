@@ -5,17 +5,58 @@
 :root {
     color-scheme: light dark;
 
-    // --- Color ---------------------------------
-    --color-bg: #fdf0d5;
-    --color-surface: #f9fafb;
-    --color-fg: #1a1a1a;
-    --color-muted: #6b7280;
-    --color-subtle: #9ca3af;
-    --color-primary: #780000;
-    --color-primary-hover: #c1121f;
-    --color-border: #e5e7eb;
-    --color-accent: #003049;
-    --color-accent-hover: #669bbc;
+    // --- Semantic color ------------------------
+    // Text
+    --color-text-primary: var(--color-neutral-900);
+    --color-text-secondary: var(--color-neutral-600);
+    --color-text-disabled: var(--color-neutral-400);
+    --color-text-inverse: var(--color-neutral-50);
+    --color-text-success: var(--color-green-700);
+    --color-text-warning: var(--color-yellow-700);
+    --color-text-danger: var(--color-red-700);
+    --color-text-info: var(--color-blue-700);
+
+    // Background
+    --color-bg-default: var(--color-neutral-50);
+    --color-bg-subtle: var(--color-neutral-100);
+    --color-bg-surface: #ffffff;
+    --color-bg-success: var(--color-green-50);
+    --color-bg-warning: var(--color-yellow-50);
+    --color-bg-danger: var(--color-red-50);
+    --color-bg-info: var(--color-blue-50);
+
+    // Border
+    --color-border-default: var(--color-neutral-200);
+    --color-border-focus: var(--color-orange-500);
+    --color-border-success: var(--color-green-400);
+    --color-border-warning: var(--color-yellow-400);
+    --color-border-danger: var(--color-red-400);
+    --color-border-info: var(--color-blue-400);
+
+    // Interactive — primary
+    --color-interactive-primary: var(--color-orange-500);
+    --color-interactive-primary-hover: var(--color-orange-600);
+    --color-interactive-primary-pressed: var(--color-orange-700);
+
+    // Interactive — success
+    --color-interactive-success: var(--color-green-500);
+    --color-interactive-success-hover: var(--color-green-600);
+    --color-interactive-success-pressed: var(--color-green-700);
+
+    // Interactive — warning
+    --color-interactive-warning: var(--color-yellow-500);
+    --color-interactive-warning-hover: var(--color-yellow-600);
+    --color-interactive-warning-pressed: var(--color-yellow-700);
+
+    // Interactive — danger
+    --color-interactive-danger: var(--color-red-500);
+    --color-interactive-danger-hover: var(--color-red-600);
+    --color-interactive-danger-pressed: var(--color-red-700);
+
+    // Interactive — info
+    --color-interactive-info: var(--color-blue-500);
+    --color-interactive-info-hover: var(--color-blue-600);
+    --color-interactive-info-pressed: var(--color-blue-700);
 
     // --- Type families -------------------------
     --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;

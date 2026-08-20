@@ -4,3 +4,17 @@
 @use "reset";
 @use "variables";
 @use "typography";
+@use "helpers";
+
+body {
+    max-width: 1040px;
+    margin: auto;
+    background-color: var(--color-bg-default);
+}
+
+.card {
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-base);
+    background: var(--color-subtle);
+    padding: var(--space-md);
+}

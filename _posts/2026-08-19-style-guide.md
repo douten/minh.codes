@@ -4,19 +4,12 @@ title: Style Guide
 code_highlight: true
 ---
 
-Reference
-{:.eyebrow}
-
 # Style Guide
-
 A living reference for the type scale, spacing tokens, and code styling in this design system. Every element below is rendered with the classes it documents.
-{:.lead}
 
 ---
 
 ## Typography
-
----
 
 Display
 {:.display}
