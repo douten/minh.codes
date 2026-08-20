@@ -5,33 +5,48 @@
 :root {
     color-scheme: light dark;
 
+    // https://maketintsandshades.com/#colors=ffb703,06d6a0,ee6c4d,457b9d,a7c957,d62828,84827D&hashtag=0&steps=20
+    // % below is based on 20 steps. (tint, shade)
+    // FG/BG combo tested in figma for AA contrast.
+    // --- Foundation Colors ---------------------
+    --color-primary: #ffb703;
+    --color-secondary: #06d6a0;
+    --color-orange: #ee6c4d; // warning
+    --color-blue: #457b9d; // info
+    --color-green: #a7c957; // success
+    --color-red: #d62828; // error
+    --color-neutral: #8b8a88;
+
     // --- Semantic color ------------------------
-    // Text
-    --color-text-primary: var(--color-neutral-900);
-    --color-text-secondary: var(--color-neutral-600);
-    --color-text-disabled: var(--color-neutral-400);
-    --color-text-inverse: var(--color-neutral-50);
-    --color-text-success: var(--color-green-700);
-    --color-text-warning: var(--color-yellow-700);
-    --color-text-danger: var(--color-red-700);
-    --color-text-info: var(--color-blue-700);
+    // Foreground
+    --color-fg-primary: light-dark(#313030, #d6d6d5); // neutral 65%, 65%
+    --color-fg-secondary: light-dark(#024b38, #e0ecc4); // secondary 65%,
+    --color-fg-tertiary: light-dark(#805c02, #ffdb81); // primary 50%,
+    --color-fg-disabled: light-dark(#b4b3b2, #5a5a58); // neutral 35%, 35%
+    --color-fg-interactive-default: light-dark(#b3513a, #f2917a); // orange 25%, 25%
+    --color-fg-interactive-hover: light-dark(#d66145, #f07b5f); // orange 10%, 10%
+    --color-fg-info: light-dark(#2d5066, #86a9bf); // blue 35%, 35%
+    // --color-fg-success: var(--etc);
+    // --color-fg-warning: var(--color-yellow-50);
+    // --color-fg-danger: var(--color-red-50);
 
     // Background
-    --color-bg-default: var(--color-neutral-50);
-    --color-bg-subtle: var(--color-neutral-100);
-    --color-bg-surface: #ffffff;
-    --color-bg-success: var(--color-green-50);
-    --color-bg-warning: var(--color-yellow-50);
-    --color-bg-danger: var(--color-red-50);
-    --color-bg-info: var(--color-blue-50);
+    --color-bg-primary: light-dark(#fffbf2, #261b00); // primary 95%, 85%
+    --color-bg-secondary: light-dark(#eeeded, #313030); // neutral 85%, 65%
+    --color-bg-tertiary: light-dark(#c5c5c4, #464544); // neutral 50%, 50%
+    --color-bg-disabled: light-dark(#d6d6d5, #261b00); // neutral 65%, 65%
+    --color-bg-info: light-dark(#bed1dd, #182b37); // blue 65%
+    // --color-bg-success: var(--etc);
+    // --color-bg-warning: var(--color-yellow-50);
+    // --color-bg-danger: var(--color-red-50);
 
     // Border
     --color-border-default: var(--color-neutral-200);
     --color-border-focus: var(--color-orange-500);
-    --color-border-success: var(--color-green-400);
-    --color-border-warning: var(--color-yellow-400);
-    --color-border-danger: var(--color-red-400);
     --color-border-info: var(--color-blue-400);
+    // --color-border-success: var(--color-green-400);
+    // --color-border-warning: var(--color-yellow-400);
+    // --color-border-danger: var(--color-red-400);
 
     // Interactive — primary
     --color-interactive-primary: var(--color-orange-500);
