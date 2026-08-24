@@ -157,6 +157,14 @@ $spacing: (
 }
 
 // --- Typography -------------------------------
+.serif {
+    font-family: 'literata', sans-serif;
+}
+
+.sans-serif {
+    font-family: 'roboto', sans-serif;
+}
+
 .line-through {
     text-decoration: line-through;
 }

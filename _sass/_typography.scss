@@ -1,9 +1,18 @@
 // ============================================
 // _typography.scss
 // ============================================
+@font-face {
+    font-family: 'literata';
+    src: url('../fonts/literata.woff2') format('woff2'),
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto.woff2') format('woff2'),
+}
 
 body {
-  font-family: var(--font-sans);
+  font-family: "literata", serif;
   font-size: var(--text-base);
   line-height: var(--leading-normal);
   color: var(--color-fg);
